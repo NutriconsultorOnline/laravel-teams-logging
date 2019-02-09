@@ -56,7 +56,6 @@ class LoggerHandler extends AbstractProcessingHandler
                         'activityTitle'    => $this->name,
                         'activitySubtitle' => '<span style="color:#' . (string) $loggerColour . '">' . $record['level_name'] . '</span>',
                         'activityText'     => $record['message'],
-                        'activityImage'    => (string) new LoggerAvatar($record['level_name'], $loggerColour),
                         'facts'            => $facts,
                         'markdown'         => true
                     ]
